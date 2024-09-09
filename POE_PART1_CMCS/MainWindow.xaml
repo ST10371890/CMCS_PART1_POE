@@ -1,0 +1,34 @@
+﻿<Window x:Class="POE_PART1_CMCS.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:POE_PART1_CMCS"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#F0F4F7">
+
+        <!-- Header -->
+        <Border Background="#2D73B8" Height="50" VerticalAlignment="Top">
+            <TextBlock Text="Contract Monthly Claim System (CMCS)" 
+                    Foreground="White" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        </Border>
+
+        <!-- Main Content Area -->
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Content="Lecturer Dashboard" Width="200" Height="40" Click="OpenLecturerWindow" 
+                 Background="#2D73B8" Foreground="White" Margin="10"/>
+            <Button Content="Coordinator Dashboard" Width="200" Height="40" Click="OpenCoordinatorWindow" 
+                 Background="#2D73B8" Foreground="White" Margin="10"/>
+            <Button Content="Claim Status" Width="200" Height="40" Click="OpenStatusWindow" 
+                 Background="#2D73B8" Foreground="White" Margin="10"/>
+        </StackPanel>
+
+        <!-- Footer -->
+        <Border Background="#2D73B8" Height="30" VerticalAlignment="Bottom">
+            <TextBlock Text="© 2024 CMCS Prototype - All rights reserved." 
+                    Foreground="White" FontSize="12" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        </Border>
+
+    </Grid>
+</Window>
